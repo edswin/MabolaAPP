@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/title_games"
+        android:icon="@drawable/ic_directions_run"
+        android:title="@string/title_games"
+    />
+
+    <item
+        android:id="@+id/title_latest"
+        android:icon="@drawable/ic_event_note"
+        android:title="@string/title_latest"
+     />
+    <item
+        android:id="@+id/title_standings"
+        android:icon="@drawable/ic_equalizer"
+        android:title="@string/title_standings"
+        />
+    <item
+    android:id="@+id/title_schedule"
+    android:icon="@drawable/ic_content_paste"
+    android:title="@string/title_schedule"
+        />
+    <item
+        android:id="@+id/title_rules"
+        android:icon="@drawable/ic_gavel"
+        android:title="@string/title_rules"
+       />
+
+</menu>
