@@ -17,16 +17,4 @@
         android:scaleType="centerCrop"
         android:src="@drawable/mblbg1" />
 
-
-    <Button
-        android:id="@+id/btnContinue"
-        android:layout_width="157dp"
-        android:layout_height="27dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="12dp"
-        android:background="@drawable/continuebtn" />
-
-
 </RelativeLayout>

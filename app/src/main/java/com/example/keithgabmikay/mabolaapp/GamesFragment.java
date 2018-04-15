@@ -1,29 +1,26 @@
 package com.example.keithgabmikay.mabolaapp;
 
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.annotation.Nullable;
+import android.widget.TextView;
+
+import java.text.DateFormat;
+import java.util.Calendar;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class GamesFragment extends Fragment {
+public class GamesFragment extends Activity {
 
+    private TextView theDate;
 
-    public GamesFragment() {
-        // Required empty public constructor
-    }
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_games, container, false);
+    protected void onCreate(@Nullable  Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_games);
+        Calendar calendar = Calendar.getInstance();
+        String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+        theDate = findViewById(R.id.gamesCalendartextView);
+        theDate.setText(currentDate);
     }
 
 }
