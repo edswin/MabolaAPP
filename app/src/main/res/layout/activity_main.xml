@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/mobilebg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-         android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
         android:contentDescription="@string/app_name"
         android:cropToPadding="false"
         android:scaleType="centerCrop"
         android:src="@drawable/mblbg1" />
-
 </RelativeLayout>
