@@ -29,7 +29,6 @@ public class Bottomnavi extends Activity {
             switch (item.getItemId()) {
                 case R.id.title_games:
                     transaction.replace(R.id.fragment_container,new GamesFragment()).commit();
-
                     return true;
                 case R.id.title_latest:
                     transaction.replace(R.id.fragment_container,new LatestFragment()).commit();
