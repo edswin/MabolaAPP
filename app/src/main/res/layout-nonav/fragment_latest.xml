@@ -14,5 +14,5 @@
         android:src="@drawable/fragment_latest"
         android:layout_alignParentLeft="true" />
 
-
+<--- edwin check mo nga to ----->
 </RelativeLayout>
