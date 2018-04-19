@@ -18,4 +18,13 @@
         android:cropToPadding="false"
         android:scaleType="centerCrop"
         android:src="@drawable/mblbg1" />
+
+    <ImageView
+        android:id="@+id/mbllogoimageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/mabolalogonew"
+        android:visibility="invisible" />
 </RelativeLayout>
