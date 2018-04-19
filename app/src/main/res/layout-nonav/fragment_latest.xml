@@ -13,6 +13,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/fragment_latest"
         android:layout_alignParentLeft="true" />
-  
+
 
 </RelativeLayout>

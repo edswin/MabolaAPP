@@ -32,7 +32,7 @@ public class Bottomnavi extends Activity {
 
                     return true;
                 case R.id.title_latest:
-
+                    transaction.replace(R.id.fragment_container,new LatestFragment()).commit();
                     return true;
                 case R.id.title_standings:
 
