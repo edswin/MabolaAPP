@@ -14,7 +14,7 @@ import java.util.Map;
 public class ItemAdapter extends  BaseAdapter {
 
         LayoutInflater mInflator;
-        Map<String, Double> map;
+        Map<String, String> map;
         List<String> teamNameA;
         List<String> teamNameB;
 
@@ -32,7 +32,7 @@ public class ItemAdapter extends  BaseAdapter {
 
         @Override
         public Object getItem(int position) {
-            return teamNameA.get(position);
+            return position;
         }
 
         @Override
@@ -42,12 +42,12 @@ public class ItemAdapter extends  BaseAdapter {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            @SuppressLint("ViewHolder") View v = mInflator.inflate(R.layout.fragment_games,null);
-            TextView teamA = (TextView) v.findViewById(R.id.teama_textview);
-            TextView teamB = (TextView) v.findViewById(R.id.teamb_textview);
+            @SuppressLint("ViewHolder") View v = mInflator.inflate(R.layout.fragment_itemgames,null);
+            TextView teamA = (TextView) v.findViewById(R.id.teamatextview);
+            TextView teamB = (TextView) v.findViewById(R.id.teambtext);
 
             teamA.setText(teamNameA.get(position));
-            teamB.setText(teamNameB.get((position)));
+            teamB.setText(teamNameB.get(position));
             return v;
         }
     }

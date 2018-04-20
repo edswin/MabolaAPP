@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemgamesFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/games_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fragment_games"
+        android:visibility="gone"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/teamaimageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_launcher_round"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/teambimageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/teamaimageView"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/ic_launcher_round"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/teambtext"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/teambimageView"
+        android:layout_below="@+id/teamaimageView"
+        android:layout_marginStart="-7dp"
+        android:text="TNL Elite"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/datetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="April 21 2018"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/timetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="10:00 AM"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp" />
+
+    <TextView
+        android:textSize="12dp"
+        android:id="@+id/teamatextview"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/teamaimageView"
+        android:layout_below="@+id/teamaimageView"
+        android:layout_marginStart="-12dp"
+        android:text="Tropang KL"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+       />
+
+
+
+</RelativeLayout>
